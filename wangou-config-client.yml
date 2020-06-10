@@ -8,12 +8,22 @@ spring:
     name: wangou-config-test
 server:
   port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 ---  
 spring:
   profiles: prod
   application:
     name: wangou-config-prod
 server:
-  port: 8088  
+  port: 8088
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
     
     
