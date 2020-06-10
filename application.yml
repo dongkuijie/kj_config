@@ -1,12 +1,14 @@
 spring:
   profiles: 
     active: dev
+---    
 spring:
   profiles: test
   application:
     name: wangou-config-test
 server:
   port: 8080
+---  
 spring:
   profiles: prod
   application:
