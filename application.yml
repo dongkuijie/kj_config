@@ -1,0 +1,12 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: wangou-comment
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dongkuijie/kj_config.git
+          username: dongkuijie
+          password: dong307429
