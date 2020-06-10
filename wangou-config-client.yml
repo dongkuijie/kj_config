@@ -1,0 +1,19 @@
+spring:
+  profiles: 
+    active: test
+---    
+spring:
+  profiles: test
+  application:
+    name: wangou-config-test
+server:
+  port: 8080
+---  
+spring:
+  profiles: prod
+  application:
+    name: wangou-config-prod
+server:
+  port: 8088  
+    
+    
